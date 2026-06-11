@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Homefield Lab — What we build</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Graduate&family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#FFFFFF;--bg2:#F6F3EC;--ink:#181D27;--navy:#1E2D4E;--cream:#EFE8D7;--muted:#5C6573;--line:#E9E6DF;--red:#B23A2E;
+    --serif:"Fraunces",Georgia,serif;--disp:"Graduate",Georgia,serif;--sans:"Inter",-apple-system,BlinkMacSystemFont,sans-serif;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 28px}
+  header{border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;gap:11px;height:64px}
+  .nav img{height:28px} .nav b{font-weight:600;font-size:17px}
+  .hero{padding:64px 0 30px}
+  .eyebrow{font-family:var(--disp);text-transform:uppercase;letter-spacing:.16em;font-size:12px;color:var(--red)}
+  h1{font-family:var(--disp);text-transform:uppercase;letter-spacing:.02em;font-weight:400;font-size:40px;line-height:1.1;margin:14px 0 0;max-width:760px;color:var(--ink)}
+  .hero p{font-size:19px;color:var(--muted);max-width:640px;margin:18px 0 0}
+  .found{background:var(--bg2);border-radius:16px;padding:24px 26px;margin:30px 0 10px}
+  .found .l{font-family:var(--serif);font-weight:600;font-size:20px;margin:0 0 4px}
+  .found p{margin:0;color:var(--muted);max-width:720px}
+  section.role{padding:34px 0 4px;border-top:1px solid var(--line)}
+  .rl{font-family:var(--disp);text-transform:uppercase;letter-spacing:.1em;font-size:13px;color:var(--navy);margin:0 0 16px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .card{border:1px solid var(--line);border-radius:14px;padding:20px 22px}
+  .card h3{font-family:var(--serif);font-weight:600;font-size:18px;margin:0 0 6px;color:var(--navy)}
+  .card p{margin:0;color:var(--muted);font-size:15px}
+  .diff{background:var(--navy);color:#fff;border-radius:20px;padding:40px 32px;margin:44px 0}
+  .diff .rl{color:#A9B4CC}
+  .dgrid{display:grid;grid-template-columns:1fr 1fr;gap:20px 32px;margin-top:6px}
+  .dgrid h4{font-family:var(--serif);font-weight:600;font-size:17px;margin:0 0 4px;color:#fff}
+  .dgrid p{margin:0;color:#C7CEDC;font-size:14.5px}
+  .cta{text-align:center;padding:10px 0 56px}
+  .cta .l{font-family:var(--disp);text-transform:uppercase;letter-spacing:.02em;font-size:24px;margin:0 0 8px}
+  .cta p{color:var(--muted);max-width:560px;margin:0 auto 20px}
+  .btn{display:inline-block;font-family:var(--disp);text-transform:uppercase;letter-spacing:.07em;font-size:14px;background:var(--navy);color:#fff;padding:13px 26px;border-radius:8px;text-decoration:none}
+  .btn:hover{background:#16223C}
+  @media(max-width:720px){.grid,.dgrid{grid-template-columns:1fr}h1{font-size:30px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a href="index.html" style="display:flex;align-items:center;gap:11px;text-decoration:none;color:inherit"><img src="logo.png" alt="Homefield" onerror="this.style.display='none'"><b>Homefield Lab</b></a></div></header>
+
+<main class="wrap">
+  <div class="hero">
+    <div class="eyebrow">What we build</div>
+    <h1>Tools for every corner of your operation.</h1>
+    <p>Custom social and AI technology, built for how your team actually works, connected to the tools you already use, and yours to own.</p>
+  </div>
+
+  <div class="found">
+    <div class="l">It starts with your data.</div>
+    <p>We bring your roster, your accounts, your schedule, and your social into one place you can finally ask questions of. Everything below is built on that foundation.</p>
+  </div>
+
+  <section class="role">
+    <div class="rl">For everyone</div>
+    <div class="grid">
+      <div class="card"><h3>Ask</h3><p>Ask your data anything, in plain language, and get an answer in seconds — not a request that sits in an analyst's queue.</p></div>
+    </div>
+  </section>
+
+  <section class="role">
+    <div class="rl">For teams who create content</div>
+    <div class="grid">
+      <div class="card"><h3>Content Radar</h3><p>Never miss a moment. We surface the milestones, anniversaries, and trends worth posting before they pass, with the idea already drafted.</p></div>
+      <div class="card"><h3>Content Engine</h3><p>Turn one moment into a wall of ready-to-post content, in your voice, across every platform, in seconds.</p></div>
+    </div>
+  </section>
+
+  <section class="role">
+    <div class="rl">For teams who analyze &amp; build reporting</div>
+    <div class="grid">
+      <div class="card"><h3>Player &amp; Social Intelligence</h3><p>See your roster the way no off-the-shelf tool can: who overperforms their following, who carries the brand, where the value really is.</p></div>
+      <div class="card"><h3>Reporting Builder</h3><p>End the manual reporting grind. The recaps and dashboards you need, built once and kept current automatically.</p></div>
+    </div>
+  </section>
+
+  <section class="role">
+    <div class="rl">For teams who manage workflows</div>
+    <div class="grid">
+      <div class="card"><h3>Knowledge Assistant</h3><p>Every rule, guideline, and right, answerable in plain language, instantly. No more digging through PDFs.</p></div>
+      <div class="card"><h3>Workflow Automation</h3><p>Put the repetitive work on autopilot — approvals, pipelines, the busywork — so your team spends its time where it counts.</p></div>
+    </div>
+  </section>
+
+  <section class="role">
+    <div class="rl">For teams who work with partners</div>
+    <div class="grid">
+      <div class="card"><h3>Partner Dashboards</h3><p>Show every partner exactly what they're getting, automatically, instead of rebuilding a deck every month.</p></div>
+      <div class="card"><h3>Sponsorship Intelligence</h3><p>See which athletes drive the most partner value, and the money you're leaving on the table.</p></div>
+    </div>
+  </section>
+
+  <section class="role">
+    <div class="rl">For teams who manage athletes</div>
+    <div class="grid">
+      <div class="card"><h3>Athlete Media Kit</h3><p>A polished, personalized kit for every athlete, ready the moment you need it.</p></div>
+      <div class="card"><h3>Athlete Tools</h3><p>Per-athlete content and NIL tools that scale across your whole roster, not one star at a time.</p></div>
+    </div>
+  </section>
+
+  <div class="diff">
+    <div class="rl">The Homefield difference</div>
+    <div class="dgrid">
+      <div><h4>Built for sports</h4><p>Scoped to your seasons, your roster, and game day — not generic enterprise software you bend to fit.</p></div>
+      <div><h4>AI-accelerated, human-graded</h4><p>We move fast with AI, and a senior developer reviews and hardens everything before it ships. No AI slop.</p></div>
+      <div><h4>Connects to your stack</h4><p>We plug into the tools you already use instead of replacing them. Less overhead than SaaS.</p></div>
+      <div><h4>Yours to own</h4><p>We build it, document it in real time, and hand it over — so you end up more capable, and independent of us.</p></div>
+    </div>
+  </div>
+
+  <div class="cta">
+    <div class="l">Start with a Social Tech Audit.</div>
+    <p>A focused look at where you stand today and where the real opportunity is. The lowest-friction way to begin, and it's credited toward whatever we build together.</p>
+    <a class="btn" href="mailto:hello@homefieldlab.com">Get in touch</a>
+  </div>
+</main>
+</body>
+</html>
