@@ -35,19 +35,26 @@
   .brand{display:flex;align-items:center;gap:11px;font-weight:600;font-size:18px;color:var(--ink)}
   .brand img{height:30px;width:auto}
   .nav .btn{padding:9px 18px;font-size:14px}
-  /* hero (centered) */
-  .hero{text-align:center;padding:76px 0 64px;border-top:none;
-        background:radial-gradient(125% 95% at 50% 0%, var(--bg2) 0%, #fff 62%)}
-  .badge{display:inline-block;background:var(--cream);color:var(--navy);font-size:14px;font-weight:500;
-         padding:8px 18px;border-radius:999px;margin-bottom:24px}
-  .badge b{color:var(--red);font-family:var(--disp);font-weight:400;text-transform:uppercase;letter-spacing:.1em;font-size:12px}
-  h1{font-family:var(--disp);font-weight:400;text-transform:uppercase;letter-spacing:.015em;font-size:50px;line-height:1.08;margin:0 auto;max-width:13ch}
-  .hero .sub{font-size:20px;color:var(--muted);margin:24px auto 34px;max-width:600px}
+  /* hero (full-bleed dark photo) */
+  .hero{text-align:center;color:#fff;border-top:none;padding:106px 0 92px;
+        background:linear-gradient(180deg,rgba(18,26,48,.55) 0%,rgba(15,22,42,.88) 100%),
+                   radial-gradient(85% 75% at 50% 40%, rgba(12,18,36,.55) 0%, rgba(12,18,36,0) 68%),
+                   url('hero-bg.jpg');
+        background-color:var(--navy);background-size:cover;background-position:center;background-repeat:no-repeat}
+  .hero .badge{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);
+         color:#EFE8D7;font-size:14px;font-weight:500;padding:8px 18px;border-radius:999px;margin-bottom:26px;backdrop-filter:blur(4px)}
+  .hero .badge b{color:#fff;font-family:var(--disp);font-weight:400;text-transform:uppercase;letter-spacing:.1em;font-size:12px}
+  .hero h1{font-family:var(--disp);font-weight:400;text-transform:uppercase;letter-spacing:.015em;font-size:56px;line-height:1.06;margin:0 auto;max-width:13ch;color:#fff;text-shadow:0 2px 28px rgba(0,0,0,.4)}
+  .hero .sub{font-size:20px;color:#D7DCE6;margin:24px auto 34px;max-width:600px}
   .cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-  .btn-ghost{background:transparent;color:var(--navy);border:1.5px solid var(--navy)}
-  .btn-ghost:hover{background:var(--navy);color:#fff}
-  .proof{margin-top:52px}
-  .proof-label{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.13em;color:var(--muted)}
+  .hero .btn{background:#fff;color:var(--navy)}
+  .hero .btn:hover{background:var(--cream)}
+  .btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.55)}
+  .btn-ghost:hover{background:#fff;color:var(--navy);border-color:#fff}
+  .proof{margin-top:56px}
+  .proof-label{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.13em;color:#AEB7C9}
+  .hero .cred-names{color:#fff}
+  .hero .cred-sub{color:#C2C9D6}
   /* credibility band */
   .cred{padding:42px 0;border-top:1px solid var(--line);text-align:center}
   .cred-names{font-family:var(--disp);text-transform:uppercase;letter-spacing:.05em;font-size:20px;color:var(--navy);margin-top:16px;line-height:1.85}
@@ -77,7 +84,7 @@
   .contact .btn{background:#fff;color:var(--navy)}
   .contact .btn:hover{background:var(--cream)}
   footer{padding:34px 0;border-top:1px solid var(--line);color:var(--muted);font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
-  @media(max-width:820px){.hero{padding:52px 0 44px}h1{font-size:34px;max-width:100%}.hero .sub{font-size:18px}.pillars{grid-template-columns:1fr;gap:28px}.about{grid-template-columns:1fr;gap:28px}.lead,.contact .lead{font-size:27px}}
+  @media(max-width:820px){.hero{padding:76px 0 60px}.hero h1{font-size:34px;max-width:100%}.hero .sub{font-size:18px}.pillars{grid-template-columns:1fr;gap:28px}.about{grid-template-columns:1fr;gap:28px}.lead,.contact .lead{font-size:27px}}
 </style>
 </head>
 <body>
@@ -86,9 +93,8 @@
   <div style="display:flex;align-items:center;gap:20px"><a href="what-we-build.html" style="font-weight:600;color:#181D27;text-decoration:none;font-size:15px">What we build</a><a class="btn" href="mailto:hello@homefieldlab.com">Get in touch</a></div>
 </div></header>
 
-<main class="wrap">
-
-  <section class="hero">
+<section class="hero">
+  <div class="wrap">
     <div class="badge"><b>Applied AI for sports</b> &nbsp; Custom built, and yours to own</div>
     <h1>Build your homefield advantage.</h1>
     <p class="sub">Custom social and AI technology for sports organizations. Built for how your team actually plays, and yours to keep.</p>
@@ -101,7 +107,10 @@
       <div class="cred-names">NFL<span class="dot">●</span>FIFA<span class="dot">●</span>UFC<span class="dot">●</span>ATP<span class="dot">●</span>WTA<span class="dot">●</span>MLS<span class="dot">●</span>LIV Golf<span class="dot">●</span>Major League Volleyball</div>
       <div class="cred-sub">and dozens of their teams, clubs, and athletes along the way.</div>
     </div>
-  </section>
+  </div>
+</section>
+
+<main class="wrap">
 
   <section>
     <div class="eyebrow">What we do</div>
