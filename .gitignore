@@ -1,8 +1,9 @@
 .DS_Store
 *.swp
 .~lock.*
-fonts/Birdie-Standard/
-fonts/Highbeams_Standard/
-fonts/Sundae_Standard/
-fonts/_specimen.png
-fonts/_*.png
+Fonts/Birdie-Standard/
+Fonts/Highbeams_Standard/
+Fonts/Sundae_Standard/
+Fonts/_*.png
+photos/
+stadium-raw.jpg
