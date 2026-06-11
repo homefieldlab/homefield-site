@@ -59,6 +59,13 @@
   .proof-label{font-family:var(--serif);font-size:15px;font-weight:400;letter-spacing:.08em;color:#AEB7C9}
   .hero .cred-names{color:#fff}
   .hero .cred-sub{color:#C2C9D6}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;white-space:nowrap}
+  .hero-lockup{display:block;width:100%;max-width:680px;height:auto;margin:0 auto 8px}
+  .hero-lockup .arch{font-family:var(--serif);font-style:italic;font-size:25px;letter-spacing:2px;fill:#D7DCE6}
+  .hero-lockup .l-build{font-family:var(--disp);font-size:42px;letter-spacing:4px;fill:#fff}
+  .hero-lockup .l-home{font-family:var(--disp);font-size:90px;letter-spacing:1px;fill:#fff}
+  .hero-lockup .l-adv{font-family:var(--script);font-size:82px;fill:#EFE8D7}
+  .hero-lockup .ul{stroke:var(--red);stroke-width:6;stroke-linecap:round;fill:none}
   /* credibility band */
   .cred{padding:42px 0;border-top:1px solid var(--line);text-align:center}
   .cred-names{font-family:var(--disp);text-transform:uppercase;letter-spacing:.05em;font-size:20px;color:var(--navy);margin-top:16px;line-height:1.85}
@@ -99,8 +106,15 @@
 
 <section class="hero">
   <div class="wrap">
-    <div class="badge"><b>Applied AI for sports</b> &nbsp; Custom built, and yours to own</div>
-    <h1>Build your homefield advantage.</h1>
+    <h1 class="sr-only">Build your homefield advantage</h1>
+    <svg class="hero-lockup" viewBox="0 0 800 410" role="img" aria-label="Applied AI for sports. Build your homefield advantage.">
+      <defs><path id="archPath" d="M185 122 Q400 30 615 122" fill="none"/></defs>
+      <text class="arch" text-anchor="middle"><textPath href="#archPath" startOffset="50%">APPLIED AI FOR SPORTS</textPath></text>
+      <text class="l-build" x="400" y="190" text-anchor="middle">BUILD YOUR</text>
+      <text class="l-home" x="400" y="280" text-anchor="middle">HOMEFIELD</text>
+      <text class="l-adv" x="400" y="368" text-anchor="middle">advantage</text>
+      <path class="ul" d="M250 384 C360 398 470 396 558 378"/>
+    </svg>
     <p class="sub">Custom social and AI technology for sports organizations. Built for how your team actually plays, and yours to keep.</p>
     <div class="cta-row">
       <a class="btn" href="mailto:hello@homefieldlab.com">Get in touch</a>
