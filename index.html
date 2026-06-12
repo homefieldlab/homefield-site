@@ -40,6 +40,9 @@
   .brand-center img{height:72px;width:auto;display:block}
   .nav .btn{background:transparent;color:#fff;border:none;padding:6px 4px;font-size:15px;font-weight:500}
   .nav .btn:hover{background:transparent;color:#fff;text-decoration:underline;text-underline-offset:5px}
+  .nav-right{display:flex;align-items:center;gap:26px}
+  .navlink{color:#fff;font-weight:500;font-size:15px}
+  .navlink:hover{text-decoration:underline;text-underline-offset:5px}
   @media(max-width:560px){.nav{padding:16px 22px 0}.brand-center img{height:54px}.nav .btn{padding:8px 13px;font-size:13px}}
   /* full-bleed dark photo hero, text on top */
   .hero{text-align:center;color:#fff;border-top:none;padding:152px 0 92px;
@@ -129,8 +132,11 @@
 </head>
 <body>
 <header><div class="nav">
-  <a href="index.html" class="brand-center"><img src="logo2-white.png" alt="Homefield Lab"></a>
-  <a class="btn" href="mailto:hello@homefieldlab.com">Get in touch</a>
+  <a href="/" class="brand-center"><img src="logo2-white.png" alt="Homefield Lab"></a>
+  <div class="nav-right">
+    <a class="navlink" href="how-we-work">How we work</a>
+    <a class="btn" href="mailto:hello@homefieldlab.com">Get in touch</a>
+  </div>
 </div></header>
 
 <section class="hero">
@@ -198,7 +204,7 @@
 
 <footer class="wrap">
   <div>© 2026 Homefield Lab</div>
-  <div><a href="mailto:hello@homefieldlab.com">hello@homefieldlab.com</a></div>
+  <div><a href="how-we-work">How we work</a> &nbsp;·&nbsp; <a href="mailto:hello@homefieldlab.com">hello@homefieldlab.com</a></div>
 </footer>
 </body>
 </html>
