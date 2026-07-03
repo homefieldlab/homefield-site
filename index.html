@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Homefield Lab — Custom social and AI technology for sports organizations</title>
-<meta name="description" content="Homefield Lab builds custom social and AI technology for sports organizations. Bring it in-house. Build your homefield advantage, and own it.">
+<title>Homefield Lab — A product-led dev shop for sports</title>
+<meta name="description" content="Homefield Lab is a product-led dev shop building custom social and AI technology for sports organizations, and the startups building in the space. Bring it in-house, and own it.">
 <meta property="og:title" content="Homefield Lab">
-<meta property="og:description" content="Build your homefield advantage. Custom social and AI technology for sports organizations, built for how your team actually plays, and yours to keep.">
+<meta property="og:description" content="A product-led dev shop building custom social and AI technology for sports organizations, and the startups building in the space. Built for how your team actually plays, and yours to keep.">
 <meta property="og:type" content="website">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32">
@@ -53,6 +53,9 @@
   .hero .badge{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);
          color:#EFE8D7;font-size:14px;font-weight:500;padding:8px 18px;border-radius:999px;margin-bottom:26px;backdrop-filter:blur(4px)}
   .hero .badge b{color:#fff;font-family:var(--serif);font-weight:400;letter-spacing:.04em;font-size:14px}
+  .hero .kicker{display:inline-flex;align-items:center;gap:16px;font-family:var(--disp);text-transform:uppercase;letter-spacing:.16em;font-size:16px;color:#EFE8D7;margin-bottom:24px}
+  .hero .kicker::before,.hero .kicker::after{content:"";width:28px;height:2px;background:var(--red);display:inline-block}
+  @media(max-width:560px){.hero .kicker{font-size:13px;letter-spacing:.12em;gap:10px}.hero .kicker::before,.hero .kicker::after{width:16px}}
   .hero h1{font-family:var(--disp);font-weight:400;text-transform:uppercase;letter-spacing:.015em;font-size:56px;line-height:1.06;margin:0 auto;max-width:13ch;color:#fff;text-shadow:0 2px 28px rgba(0,0,0,.4)}
   .hero .sub{font-size:21px;color:#D7DCE6;margin:26px auto 34px;max-width:620px}
   .cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
@@ -147,12 +150,13 @@
 <section class="hero">
   <div class="wrap">
     <h1 class="sr-only">Build your homefield advantage</h1>
+    <div class="kicker">Product-led dev shop for sports</div>
     <svg class="hero-lockup" viewBox="0 0 800 300" role="img" aria-label="Build your homefield advantage">
       <text class="l-build" x="400" y="52" text-anchor="middle">BUILD YOUR</text>
       <text class="l-home" x="400" y="150" text-anchor="middle">HOMEFIELD</text>
       <text class="l-adv" x="400" y="250" text-anchor="middle">Advantage</text>
     </svg>
-    <p class="sub">Custom social and AI technology for sports organizations. Built for how your team actually plays, and yours to keep.</p>
+    <p class="sub">Custom social and AI technology for sports organizations, and the startups building in the space. Built for how your team actually plays, and yours to keep.</p>
     <div class="cta-row">
       <a class="btn" href="mailto:hello@homefieldlab.com?subject=Social%20Tech%20Audit">Start with an audit</a>
     </div>
@@ -175,7 +179,7 @@
   <section>
     <div class="eyebrow">What we do</div>
     <div class="lead">Sports has always rewarded the teams that prepare differently. The tools just changed.</div>
-    <p class="body">Most software is built for generic enterprise, not for the pace, structure, and culture of a sports organization. We build custom systems on today's AI, scoped to your roster, your partners, and your game-day reality. <strong>Less overhead than off-the-shelf software. More value than anything you'd rent.</strong></p>
+    <p class="body">We're a product-led dev shop: product thinking and strategy first, then we build the software to match. Most tools are built for generic enterprise, not the pace, structure, and culture of sports. We build custom systems on today's AI for leagues, teams, and the startups building in sports, content, and social tech. <strong>Owned, not rented. Built to fit, not bent to fit.</strong></p>
   </section>
 
   <section class="sec-panel">
@@ -222,7 +226,7 @@
   <section class="contact-sec">
     <div class="contact">
       <div class="lead">Let's talk about what you're building.</div>
-      <p class="body">Whether you're rethinking your social tech, navigating a transition, or just trying to get more out of what you already have, this is a good place to start. No long pitch. Just a direct conversation about where you are and what would actually help.</p>
+      <p class="body">Whether you're a league, a team, or a startup building in the space, rethinking your social tech, navigating a transition, or just trying to get more out of what you already have, this is a good place to start. No long pitch. Just a direct conversation about where you are and what would actually help.</p>
       <a class="btn" href="mailto:hello@homefieldlab.com">Email us</a>
     </div>
   </section>
